@@ -1,0 +1,38 @@
+div.panel-heading{
+    background-color: royalblue !important;
+}
+
+h3.panel-title{
+    color: white;
+    font-size: 30px;    
+}
+
+div.panel-body{
+    background-color: rgb(106, 136, 224);
+    color:white;
+    font-size: 20px;
+}
+
+.dugme{
+    margin-left: 250px;
+    background-color: royalblue;
+    color: white;
+    font-size: 18px;
+    padding: 20px 20px;
+    width: 10px;
+    border-radius: 5px; 
+    transition: all 0.5s
+}
+
+.dugme:hover{
+    background-color: white;
+    color: royalblue;
+    text-decoration: none;
+    border: 1px solid royalblue;
+    padding: 40px 40px;
+    font-size: 25px;
+}
+ 
+h1{
+    color: royalblue;
+}

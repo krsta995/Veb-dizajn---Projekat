@@ -1,0 +1,67 @@
+#dugmePosalji{
+    transition: all 0.5s;
+}
+
+#dugmePosalji:hover{
+    background-color: white;
+    color: royalblue;
+    border: 2px solid royalblue;
+}
+
+h1{
+    color: royalblue;
+}
+
+footer{
+    width: 100%;
+}
+
+.btn-primary{
+    background-color: royalblue;
+    color: white;
+    border: 2px solid royalblue;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: royalblue;
+    border: 2px solid royalblue;
+}
+
+#dugmeObrisi{
+    background-color: indianred;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.5s;
+}
+
+#dugmeObrisi:hover{
+    background-color: white;
+    border: 2px solid indianred;
+    color: indianred;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background-color: white;
+    color: royalblue !important;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+#zvezda{
+    color: red;
+    font-size: 25px;
+}

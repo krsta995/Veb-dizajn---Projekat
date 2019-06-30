@@ -1,0 +1,192 @@
+.navbar-default{
+    background-color: royalblue;
+    border: 1px solid white;
+    
+}
+
+.navbar-brand{
+    position: relative;
+}
+
+.brand{
+    position: relative;
+    top: -10px;
+}
+
+.navbar-header{
+    color: white !important;
+}
+
+#naslovna{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.thumbnail {
+    background-color: white;
+    margin-top: 2%;   
+    padding: 5%;
+    transition: all 0.3s;  
+    margin-bottom: 50px;
+    border: 2px solid royalblue;   
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+    .thumbnail {
+        border: none;
+    }    
+    .nav>li>a{
+        padding: 10px 10px;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+        color: white;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover{
+        color: royalblue;
+        background-color: white;
+    }
+}
+
+.thumbnail:hover{
+    padding: 0%;
+    opacity: 1;
+}
+
+.pPoc{
+    color: white;
+}
+
+.hPoc{
+    color: royalblue    ;
+}
+#pasus{
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: grey;
+    opacity: 0.7;
+    color: white;
+    padding-left: 20px;
+}
+
+.btn{
+    transition: all 1s;
+}
+
+.btn:hover{
+    background-color: white;
+    color: royalblue;
+}
+
+.tekstNav{
+    color: white !important;
+}
+
+.navbar-brand{
+    color: white !important;
+    font-family: fantasy;
+    font-size: 30px;
+}
+
+.dropdown-toggle{
+    color: white !important;
+}
+
+.dropdown-menu{
+    background-color: royalblue;
+}
+
+.dropdown-menu li a{
+    color: white;
+    transition: all 0.5s;
+}
+
+.dropdown-menu li a:hover{
+    background-color: white;
+    color: royalblue;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: white;
+}
+
+.navbar-default .navbar-nav>.active>a{
+    background-color: white;
+    color: royalblue !important; 
+}
+
+.navbar-default .navbar-nav>.active>a:hover{
+    color: royalblue !important;
+    background-color: white;
+}
+
+.navbar-default .navbar-nav>li>a{
+    transition: all 0.5s;
+    
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    color: royalblue !important;
+    background-color: white;
+}
+
+
+
+.row{
+    width: 80%;
+    margin-left: 10%;
+}
+
+footer{
+    background-color: royalblue;
+    padding: 2rem;
+    margin-top: 2rem;
+
+}
+
+footer a{
+    color: white;
+    transition: all 0.5s;
+    padding: 10px;
+}
+
+footer a:hover{
+    color: black !important;
+    text-decoration: none !important; 
+}
+
+footer p{
+    color: white;
+}
+
+@media (max-width: 425px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+        color:white !important;
+    }
+}
+
+.navbar-default .navbar-toggle:active{
+    color: white;
+    background-color: royalblue;
+}
+
+.navbar-default .navbar-toggle:visited{
+    color: white;
+    background-color: royalblue;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    color: white;
+    background-color: royalblue;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background-color: white;
+    color: royalblue !important;
+}

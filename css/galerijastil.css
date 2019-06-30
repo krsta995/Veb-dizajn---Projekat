@@ -1,0 +1,49 @@
+h1{
+    color: royalblue;
+}
+
+img{
+    margin-bottom: 60px;
+}
+
+.container .row .col-md-4 img:hover{
+    padding: 0%;
+}
+.container .row .col-md-4 img{
+    padding: 5%;
+    transition: all 0.3s;
+}
+
+
+
+.col-sm-4{
+    width: 200%;
+    height: 200%;
+}
+
+.img-responsive{
+    width: 150%;
+    height: 150%;
+}
+
+.btn-primary{
+    background-color: royalblue;
+    color: white;
+    border: 1px solid royalblue;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color:royalblue;
+    border: 1px solid royalblue;
+    border-radius: 30px; 
+}
+
+.btn-primary:visited{
+    background-color: royalblue !important;
+    color: white !important;
+    border: 1px solid royalblue !important;
+}
+
+
+

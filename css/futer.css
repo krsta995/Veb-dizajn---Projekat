@@ -1,0 +1,8 @@
+a:hover{
+    color: black !important;
+}
+
+a:visited{
+    color: white !important;
+    text-decoration: none !important;
+}

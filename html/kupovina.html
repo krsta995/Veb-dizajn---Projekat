@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Korpa">
+  <meta name="keywords" content="kupovina, plaćanje, broj kartice">
+  <meta name="author" content="Jovan Krstevski, jovannrt8617@gs.viser.edu.rs">
+  <title>PINCUM - Narudžbina </title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="shortcut icon" href="../img/couch-solid.ico">
+  <link rel="stylesheet" href="../css/stil.css">
+  <link rel="stylesheet" href="../css/kupovina.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body onload="resetuj()">
+        <div class="full-width">
+                <nav class="navbar navbar-default">
+                  <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="index.html" style="padding:4px 5px 0px 0px">
+                        <img src="../img/malilogo.png" alt="brand" width="100px" height="40px">
+                      </a>
+                    </div>
+                
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                        <li><a href="index.html" class="tekstNav">Početna strana </a></li>  <!--ovaj red se menja kada si na drugoj str-->
+                        <li><a href="oNama.html" class="tekstNav">O nama</a></li>          
+                        <li><a href="cenovnik.html" class="tekstNav">Cenovnik</a></li>
+                        <li><a href="galerija.html" class="tekstNav">Galerija</a></li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >Usluge <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="spavace.html">Enterijer spavaćih soba</a></li>
+                            <li><a href="kancelarije.html">Enterijer kancelarija</a></li>
+                            <li><a href="dnevneSobe.html">Enterijer dnevnih soba</a></li>
+                            <li><a href="kuhinje.html">Enterijer kuhinja</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="proslava.html">Uređivanje banket sala</a></li>
+                            <li><a href="baste.html">Uređivanje bašta</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="kontakt.html" class="tekstNav">Kontakt</a></li>
+                        <li><a href="FAQ.html" class="tekstNav">FAQ</a></li>
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="kupovina.html" class="tekstNav"><i class="fas fa-shopping-cart"> <span class="sr-only">(current)</span> </i></i></a></li>          
+                     </ul>
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container-fluid -->
+                </nav>
+        </div>
+
+        <div class="row">
+                <div class="col-75">
+                  <div class="container">
+                    <form action="uspesnaKupovina.html" method="get">
+              
+                      <div class="row">
+                        <div class="col-50">
+                          <h3>Adresa za naplatu</h3>
+                          <label for="fname"><i class="fa fa-user" ></i> Ime i prezime <span id="zvezda">*</span></label>
+                          <input type="text" id="fname" name="firstname" placeholder="Jovan Jovanović" required>
+                          <label for="email"><i class="fa fa-envelope"></i> Email <span id="zvezda">*</span></label>
+                          <input type="text" id="email" name="email" placeholder="zmaj@example.com" required>
+                          <label for="adr"><i class="fas fa-map-marker"></i> Adresa <span id="zvezda">*</span></label>
+                          <input type="text" id="adr" name="address" placeholder="Zmaj Jovina 1" required>
+                          <label for="city"><i class="fas fa-city"></i> Grad <span id="zvezda">*</span></label>
+                          <input type="text" id="city" name="city" placeholder="Novi Sad" required>
+              
+                          <div class="row">
+                            <div class="col-50">
+                              <label for="state"><i class="fas fa-globe-europe"></i> Država <span id="zvezda">*</span></label>
+                              <input type="text" id="state" name="state" placeholder="SRB" required>
+                            </div>
+                            <div class="col-50">
+                              <label for="zip">Poštanski broj <span id="zvezda">*</span></label>
+                              <input type="text" id="zip" name="zip" placeholder="21000" required>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="col-50">
+                          <h3>Plaćanje</h3>
+                          <label for="fname">Pomoću kartica <span id="zvezda">*</span></label>
+                          <div class="icon-container">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-amex"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-discover"></i>
+                          </div>
+                          <label for="cname">Ime na kartici <span id="zvezda">*</span></label>
+                          <input type="text" id="cname" name="cardname" placeholder="Jovan Jovanović" required>
+                          <label for="ccnum">Broj kreditne kartice <span id="zvezda">*</span></label>
+                          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+                          <label for="expmonth">Mesec isteka kartice <span id="zvezda">*</span></label>
+                          <input type="text" id="expmonth" name="expmonth" placeholder="Decembar" required>
+              
+                          <div class="row">
+                            <div class="col-50">
+                              <label for="expyear">Godina isteka <span id="zvezda">*</span></label>
+                              <input type="text" id="expyear" name="expyear" placeholder="2018" required>
+                            </div>
+                            <div class="col-50">
+                              <label for="cvv">CVV <span id="zvezda">*</span></label>
+                              <input type="text" id="cvv" name="cvv" placeholder="352" required>
+                            </div>
+                          </div>
+                        </div>
+              
+                      </div>            
+                     
+                      <button type="submit" onclick="proveri()" class="btn">Potvrdite kupovinu</button>                     
+                      <!--<a href="uspesnaKupovina.html" class="btn"></i></i> KUPI </i></a>-->
+                      <button type="button" onclick="cicojka()" id="brisiPodatke"><i class="fas fa-trash-alt"></i></button>
+                    </form>
+                  </div>
+                </div>
+              
+                <div class="col-25">
+                    <div class="container">
+                      <h3>Korpa  <i class="fa fa-shopping-cart"></i></h4>   
+                      <p style="font-size: 15px;">Izaberite tarifu naših usluga:</p>                                      
+                      <select id="mySelect">
+                          <option value="null">Izaberi
+                          <option value="120">Osnovna
+                          <option value="360">Srednja
+                          <option value="800">Premijum
+                        </select>
+                        <br><br>
+                        <label for="kvadratura">Unesite kvadraturu prostorije (max: 500 m<sup>2</sup>)</label>
+                        <input type="number" name="kvadratura" id="kv" min="1" max="500" required><br><br>
+                        <input type="checkbox" id="dodatak1"></input> Dolazak istog dana(+50€) <br>
+                        <input type="checkbox" id="dodatak2"></input> Korišćenje organskih boja(+50€)<br>
+                        <input type="checkbox" id="dodatak3"></input> Ketering za proslave (+150€)
+                        <br><br>
+                        <button type="submit" onclick="obracunaj()" id="obracunaj">Obračunaj</button>
+                        <button onclick="obrisi()" id="brisiObracun">Obriši sve</button>
+                      <hr>
+                      <p id="cena" class="tekstObracun"></p>
+                      <p id="kvad" class="tekstObracun"></p>
+                      <p id="dodaci" class="tekstObracun"></p>
+                      <p id="ukupno" class="tekstObracun"></p>
+                    </div>
+                  </div>
+                </div> 
+
+                <footer>
+                  <div class="row text-center">
+                    <div class="col-md-12">
+                      <ul class="list-inline">
+                        <li><a href="oNama.html">O nama</a></li>
+                        <li><a href="cenovnik.html">Cenovnik</a></li>
+                        <li><a href="mapaSajta.html">Mapa sajta</a></li>
+                        <li><a href="FAQ.html">Česta pitanja</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                      </ul>
+                      <p>
+                        <ul class="list-inline">
+                          <li><a href="https://sr-rs.facebook.com/" class="tekstNav"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="https://twitter.com/" class="tekstNav"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="https://www.instagram.com/" class="tekstNav"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                      </p>
+                      <p>&copy;PINCUM, Beogradska 4, Veliko Gradište, jovannrt8617@gs.viser.edu.rs, 012/662-070</p>        
+                    </div>
+                  </div>
+                </footer>
+
+              <script>                                            
+                  function obracunaj() {
+                    var cena_dodataka =0;
+                    var brojac = 0;
+                    var tarifa = document.getElementById("mySelect").value;
+                    var kvadratura = document.getElementById("kv").value;
+                    var dodatak1 = document.getElementById("dodatak1").checked;                    
+                    var dodatak2 = document.getElementById("dodatak2").checked;
+                    var dodatak3 = document.getElementById("dodatak3").checked;
+                    if(dodatak1){
+                       cena_dodataka+=50;
+                       brojac++;
+                    }
+                    if(dodatak2){
+                      cena_dodataka+=50;
+                      brojac++;
+                    } 
+
+                    if(dodatak3) {
+                      cena_dodataka +=150;
+                      brojac++;
+                    }
+
+                    document.getElementById("cena").innerHTML = "Cena tarife: " + "<b>" + tarifa + "€" + "/m<sup>2</sup>" +  "</b>";
+                    document.getElementById("kvad").innerHTML = "Vaša kvadratura: " + "<b>" + kvadratura + "m<sup>2</sup>" + "</b>";
+                    document.getElementById("dodaci").innerHTML = "Odabrali ste " + "<b>" + brojac + "</b>" + " dodatka."
+                    var ukupno = tarifa*kvadratura;
+                    var ukupno1 = ukupno + cena_dodataka;
+                    document.getElementById("ukupno").innerHTML = "Ukupna cena naših usluga je: " + "<b>" + ukupno1 + "€" + "</b>";
+
+                    var flag = 0;
+                    var flag1 = 0;
+                    if(kvadratura > 500 || tarifa == "null" || kvadratura=="") {
+                      flag = 1;
+                    }
+                    if(flag){
+                      alert("Niste uneli dobre podatke u korpi. Klikom na OK pokušajte ponovo!");
+                      window.location.reload();
+                    }
+
+                    
+                    
+                    
+                  }
+                  
+                  function obrisi() { 
+                    document.getElementById("kv").value = "";
+                    document.getElementById("cena").innerHTML = "";
+                    document.getElementById("kvad").innerHTML = "";
+                    document.getElementById("dodaci").innerHTML = "";
+                    document.getElementById("ukupno").innerHTML = "";
+                    document.getElementById("dodatak1").checked = false;
+                    document.getElementById("dodatak2").checked = false;
+                    document.getElementById("dodatak3").checked = false;
+                    document.getElementById("mySelect").value = "null"
+                  }
+           
+
+                  function cicojka() { 
+                    document.getElementById("fname").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("adr").value = "";
+                    document.getElementById("city").value = "";
+                    document.getElementById("state").value = "";
+                    document.getElementById("zip").value = "";
+                    document.getElementById("cname").value = "";
+                    document.getElementById("ccnum").value = "";
+                    document.getElementById("expmonth").value = "";
+                    document.getElementById("expyear").value = "";
+                    document.getElementById("cvv").value = "";
+                  }
+
+                  function proveri() {
+                    var ime = document.getElementById("fname").value;
+                    var mail = document.getElementById("email").value;
+                    var adresa = document.getElementById("adr").value;
+                    var grad = document.getElementById("city").value;
+                    var drzava = document.getElementById("state").value;
+                    var zip = document.getElementById("zip").value;
+                    var kartica = document.getElementById("cname").value;
+                    var brojKartica = document.getElementById("ccnum").value;
+                    var datum = document.getElementById("expmonth").value;
+                    var godina = document.getElementById("expyear").value;
+                    var cvv = document.getElementById("cvv").value;
+
+                    if(ime=="" || mail=="" || adresa=="" || grad=="" || drzava=="" || zip=="" || kartica=="" || brojKartica=="" || datum=="" || godina=="" || cvv=="") {
+                      alert("Morate da popunite sva polja označena zvezdicom u adresi za naplatu!!!");
+                    }
+                  }
+
+                  
+             </script>
+
+
+               <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

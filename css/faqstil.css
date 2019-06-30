@@ -1,0 +1,80 @@
+#faqNaslov{
+    background: royalblue;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+
+
+#headingOne, #headingTwo, #headingThree, #headingFour, #headingFive, #headingSix, #headingSeven{
+    background-color: royalblue;
+    color: white;
+    transition: all 0.5s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#headingOne:hover{
+    background-color: white;
+    color: royalblue;
+    text-decoration: none;
+}
+
+#headingTwo:hover{
+    background-color: white;
+    color: royalblue;
+    text-decoration: none;
+}
+
+#headingThree:hover{
+    background-color: white;
+    color: royalblue;
+    text-decoration: none;
+}
+
+#headingFour:hover{
+    background-color: white;
+    color: royalblue;
+    text-decoration: none;
+}
+
+#headingFive:hover{
+    background-color: white;
+    color: royalblue;
+    text-decoration: none;
+}
+
+#headingSix:hover{
+    background-color: white;
+    color: royalblue;
+    text-decoration: none;
+}
+
+#headingSeven:hover{
+    background-color: white;
+    color: royalblue;
+    text-decoration: none;
+}
+
+#dugmeTekst{
+    font-size: 18px;
+}
+
+#dugmeKontakt{
+    background-color: royalblue;
+    color: white;
+    border-radius: 3px;
+    padding: 10px 20px;
+    transition: all 0.3s;
+    border: 1px solid royalblue;
+}
+
+#dugmeKontakt:hover{
+    background-color: white;
+    color: royalblue;
+    text-decoration: none;
+    border: 1px solid royalblue;
+}
+
+
